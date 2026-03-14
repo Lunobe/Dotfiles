@@ -16,6 +16,7 @@ kitty 0.46.0-1
 linux 6.19.6.arch1-1
 linux-firmware 20260309-1
 linux-headers 6.19.6.arch1-1
+man-db 2.13.1-1
 nano 8.7.1-1
 nautilus 49.4-1
 networkmanager 1.56.0-1
