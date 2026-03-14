@@ -5,6 +5,7 @@ base-devel 1-2
 btop 1.4.6-1
 btrfs-assistant 2.2-4
 btrfs-progs 6.19-1
+corectrl 1.5.2-5
 discord 1:0.0.128-1
 dotnet-runtime-6.0 6.0.36.sdk136-2
 efibootmgr 18-3

@@ -12,7 +12,7 @@ PS1='[\u@\h \W]\$ '
 export PATH="$HOME/.local/bin:$PATH"
 
 # Nice package management
-alias i='yay -S --noconfirm'
-alias s='yay -Ss'
-alias r='yay -Rns --noconfirm'
-alias q='yay -Qs'
+alias i="pacman -S --noconfirm'
+alias s='pacman -Ss'
+alias r='pacman -Rns --noconfirm'
+alias q='pacman -Qs'
