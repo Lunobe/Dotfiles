@@ -10,3 +10,9 @@ alias grep='grep --color=auto'
 PS1='[\u@\h \W]\$ '
 
 export PATH="$HOME/.local/bin:$PATH"
+
+# Nice package management
+alias i='yay -S --noconfirm'
+alias s='yay -Ss'
+alias r='yay -Rns --noconfirm'
+alias q='yay -Qs'
