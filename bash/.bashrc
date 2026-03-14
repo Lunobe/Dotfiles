@@ -12,7 +12,7 @@ PS1='[\u@\h \W]\$ '
 export PATH="$HOME/.local/bin:$PATH"
 
 # Nice package management
-alias i='pacman -S --noconfirm'
-alias s='pacman -Ss'
-alias r='pacman -Rns --noconfirm'
-alias q='pacman -Qs'
+alias i='sudo pacman -S --noconfirm'
+alias s='sudo pacman -Ss'
+alias r='sudo pacman -Rns --noconfirm'
+alias q='sudo pacman -Qs'
