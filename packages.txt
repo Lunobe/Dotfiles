@@ -49,6 +49,7 @@ telegram-desktop 6.6.2-1
 terminus-font 4.49.1-8
 tree 2.3.1-1
 ufw 0.36.2-7
+waybar 0.15.0-2
 wivrn-dashboard 26.2.3-1
 wofi 1.5.3-1
 xdg-desktop-portal-gtk 1.15.3-1
