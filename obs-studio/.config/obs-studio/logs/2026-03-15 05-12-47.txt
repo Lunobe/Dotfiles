@@ -1,0 +1,229 @@
+05:12:47.789: Crash or unclean shutdown detected
+05:12:49.385: [Safe Mode] Normal launch selected, loading third-party plugins is enabled
+05:12:49.385: Platform: Wayland
+05:12:49.385: CPU Name: AMD Ryzen 7 7800X3D 8-Core Processor
+05:12:49.385: CPU Speed: 2983.319MHz
+05:12:49.386: Physical Cores: 8, Logical Cores: 16
+05:12:49.386: Physical Memory: 47823MB Total, 30550MB Free
+05:12:49.386: Kernel Version: Linux 6.19.6-arch1-1
+05:12:49.386: Distribution: "Arch Linux" Unknown
+05:12:49.386: Desktop Environment: Hyprland (Hyprland)
+05:12:49.386: Session Type: wayland
+05:12:49.386: Current Date/Time: 2026-03-15, 05:12:49 AM
+05:12:49.386: Browser Hardware Acceleration: true
+05:12:49.386: Qt Version: 6.10.2 (runtime), 6.10.2 (compiled)
+05:12:49.386: Portable mode: false
+05:12:49.399: OBS 32.1.0 (linux)
+05:12:49.399: ---------------------------------
+05:12:49.399: ---------------------------------
+05:12:49.399: audio settings reset:
+05:12:49.399: 	samples per sec: 48000
+05:12:49.399: 	speakers:        2
+05:12:49.399: 	max buffering:   960 milliseconds
+05:12:49.399: 	buffering type:  dynamically increasing
+05:12:49.400: ---------------------------------
+05:12:49.400: Initializing OpenGL...
+05:12:49.400: Using EGL/Wayland
+05:12:49.429: Initialized EGL 1.5
+05:12:49.440: Loading up OpenGL on adapter AMD AMD Radeon RX 9070 XT (radeonsi, gfx1201, ACO, DRM 3.64, 6.19.6-arch1-1)
+05:12:49.440: OpenGL loaded successfully, version 4.6 (Core Profile) Mesa 26.0.2-arch1.1, shading language 4.60
+05:12:49.460: ---------------------------------
+05:12:49.460: video settings reset:
+05:12:49.460: 	base resolution:   2560x1440
+05:12:49.460: 	output resolution: 2560x1440
+05:12:49.460: 	downscale filter:  Bicubic
+05:12:49.460: 	fps:               60/1
+05:12:49.460: 	format:            NV12
+05:12:49.460: 	YUV mode:          Rec. 709/Partial
+05:12:49.460: NV12 texture support enabled
+05:12:49.460: P010 texture support not available
+05:12:49.461: Audio monitoring device:
+05:12:49.461: 	name: Default
+05:12:49.461: 	id: default
+05:12:49.463: ---------------------------------
+05:12:49.463: Failed to load 'en-US' text for module: 'decklink-captions.so'
+05:12:49.464: Failed to load 'en-US' text for module: 'decklink-output-ui.so'
+05:12:49.465: A DeckLink iterator could not be created.  The DeckLink drivers may not be installed
+05:12:49.465: Failed to initialize module 'decklink.so'
+05:12:49.540: [pipewire] Available capture sources:
+05:12:49.541: [pipewire]     - Monitor source
+05:12:49.541: [pipewire]     - Window source
+05:12:49.545: v4l2loopback not installed, virtual camera not registered
+05:12:49.556: VAAPI: API version 1.23
+05:12:49.557: FFmpeg VAAPI H264 encoding supported
+05:12:49.560: FFmpeg VAAPI AV1 encoding supported
+05:12:49.563: FFmpeg VAAPI HEVC encoding supported
+05:12:49.565: os_dlopen(libnvidia-encode.so.1->libnvidia-encode.so.1): libnvidia-encode.so.1: cannot open shared object file: No such file or directory
+05:12:49.565: 
+05:12:49.565: NVENC not supported
+05:12:49.565: Failed to initialize module 'obs-nvenc.so'
+05:12:49.582: [obs-websocket] [obs_module_load] you can haz websockets (Version: 5.7.2 | RPC Version: 1)
+05:12:49.582: [obs-websocket] [obs_module_load] Qt version (compile-time): 6.10.2 | Qt version (run-time): 6.10.2
+05:12:49.582: [obs-websocket] [obs_module_load] Linked ASIO Version: 103600
+05:12:49.584: [obs-websocket] [obs_module_load] Module loaded.
+05:12:49.586: ---------------------------------
+05:12:49.586:   Loaded Modules:
+05:12:49.586:     text-freetype2.so
+05:12:49.586:     rtmp-services.so
+05:12:49.586:     obs-x264.so
+05:12:49.586:     obs-websocket.so
+05:12:49.586:     obs-webrtc.so
+05:12:49.586:     obs-vst.so
+05:12:49.586:     obs-transitions.so
+05:12:49.586:     obs-qsv11.so
+05:12:49.586:     obs-outputs.so
+05:12:49.586:     obs-libfdk.so
+05:12:49.586:     obs-filters.so
+05:12:49.586:     obs-ffmpeg.so
+05:12:49.586:     linux-v4l2.so
+05:12:49.586:     linux-pulseaudio.so
+05:12:49.586:     linux-pipewire.so
+05:12:49.586:     linux-jack.so
+05:12:49.586:     linux-capture.so
+05:12:49.586:     linux-alsa.so
+05:12:49.586:     image-source.so
+05:12:49.586:     frontend-tools.so
+05:12:49.586:     decklink-output-ui.so
+05:12:49.586:     decklink-captions.so
+05:12:49.586: ---------------------------------
+05:12:49.586: [obs-websocket] [obs_module_post_load] WebSocket server is enabled, starting...
+05:12:49.586: [obs-websocket] [WebSocketServer::Start] Not locked to IPv4 bindings
+05:12:49.586: [obs-websocket] [WebSocketServer::ServerRunner] IO thread started.
+05:12:49.586: [obs-websocket] [WebSocketServer::Start] Server started successfully on port 4455. Possible connect address: 10.100.102.16
+05:12:49.586: ---------------------------------
+05:12:49.586: Available Encoders:
+05:12:49.586:   Video Encoders:
+05:12:49.586: 	- ffmpeg_svt_av1 (SVT-AV1)
+05:12:49.586: 	- ffmpeg_aom_av1 (AOM AV1)
+05:12:49.586: 	- ffmpeg_vaapi_tex (FFmpeg VAAPI H.264)
+05:12:49.587: 	- av1_ffmpeg_vaapi_tex (FFmpeg VAAPI AV1)
+05:12:49.587: 	- hevc_ffmpeg_vaapi_tex (FFmpeg VAAPI HEVC)
+05:12:49.587: 	- obs_x264 (x264)
+05:12:49.587:   Audio Encoders:
+05:12:49.587: 	- ffmpeg_aac (FFmpeg AAC)
+05:12:49.587: 	- ffmpeg_opus (FFmpeg Opus)
+05:12:49.587: 	- ffmpeg_pcm_s16le (FFmpeg PCM (16-bit))
+05:12:49.587: 	- ffmpeg_pcm_s24le (FFmpeg PCM (24-bit))
+05:12:49.587: 	- ffmpeg_pcm_f32le (FFmpeg PCM (32-bit float))
+05:12:49.587: 	- ffmpeg_alac (FFmpeg ALAC (24-bit))
+05:12:49.587: 	- ffmpeg_flac (FFmpeg FLAC (16-bit))
+05:12:49.587: 	- libfdk_aac (libfdk AAC)
+05:12:49.587: ==== Startup complete ===============================================
+05:12:49.613: All scene data cleared
+05:12:49.613: ------------------------------------------------
+05:12:49.633: [Python: obs_remux.py] OBS MKV → MP4 Auto-Remuxer загружен.
+05:12:49.633: [Python: obs_remux.py] Авто-ремукс включён. Вывод: рядом с MKV
+05:12:49.633: [obs-scripting]: Loaded python script: obs_remux.py
+05:12:49.633: [Python: obs_remux.py] Авто-ремукс включён. Вывод: рядом с MKV
+05:12:49.635: [Lua: save-obs-replay.lua] Beep script loaded
+05:12:49.635: [obs-scripting]: Loaded lua script: save-obs-replay.lua
+05:12:49.635: [Lua: save-obs-replay.lua] Updated settings: file=/home/lunobe/Dotfiles/scripts/sound_npc_scanner_scanner_photo1.wav player=pw-play flatpak_host=false
+05:12:49.638: Device for 'Audio Output Capture' source Desktop Audio is also used for audio monitoring.
+05:12:49.638: Deduplication logic is being applied to all monitored sources.
+05:12:49.638: pulse-input: Server name: 'PulseAudio (on PipeWire 1.6.1) 15.0.0'
+05:12:49.638: pulse-input: Audio format: s16le, 48000 Hz, 2 channels
+05:12:49.638: pulse-input: Started recording from 'alsa_output.usb-Logitech_PRO_X_000000000000-00.analog-stereo.monitor' (default)
+05:12:49.638: [Loaded global audio device]: 'Desktop Audio'
+05:12:49.639: pulse-input: Server name: 'PulseAudio (on PipeWire 1.6.1) 15.0.0'
+05:12:49.639: pulse-input: Audio format: s24le, 48000 Hz, 2 channels
+05:12:49.639: pulse-input: Sample format s24le not supported by OBS,using float32le instead for recording
+05:12:49.639: pulse-input: Started recording from 'alsa_input.usb-HP__Inc_HyperX_QuadCast_2_C1W42515DZ-00.analog-stereo' (default)
+05:12:49.639: [Loaded global audio device]: 'Mic/Aux'
+05:12:49.639: PipeWire initialized
+05:12:49.639: Switched to scene 'Scene'
+05:12:49.639: ------------------------------------------------
+05:12:49.639: Loaded scenes:
+05:12:49.639: - scene 'Scene':
+05:12:49.639:     - source: 'Screen Capture (PipeWire)' (pipewire-screen-capture-source)
+05:12:49.639: ------------------------------------------------
+05:12:49.671: Device for 'Audio Output Capture' source Desktop Audio is also used for audio monitoring.
+05:12:49.671: Deduplication logic is being applied to all monitored sources.
+05:12:49.689: [pipewire] Screencast session created
+05:12:49.706: [pipewire] Asking for monitor and window
+05:12:49.725: [pipewire] source selected, setting up screencast
+05:12:49.727: [pipewire] Server version: 1.6.1
+05:12:49.727: [pipewire] Library version: 1.6.1
+05:12:49.727: [pipewire] Header version: 1.6.1
+05:12:49.728: [pipewire] Created stream 0x558f6b3f4690
+05:12:49.728: [pipewire] Stream 0x558f6b3f4690 state: "connecting" (error: none)
+05:12:49.728: [pipewire] Playing stream 0x558f6b3f4690
+05:12:49.728: [pipewire] Stream 0x558f6b3f4690 state: "paused" (error: none)
+05:12:49.735: [pipewire] Negotiated format:
+05:12:49.735: [pipewire]     Format: 12 (Spa:Enum:VideoFormat:BGRA)
+05:12:49.735: [pipewire]     Modifier: 0x0
+05:12:49.735: [pipewire]     Size: 2560x1440
+05:12:49.735: [pipewire]     Framerate: 0/1
+05:12:49.735: [pipewire] Negotiated format:
+05:12:49.736: [pipewire]     Format: 12 (Spa:Enum:VideoFormat:BGRA)
+05:12:49.736: [pipewire]     Modifier: 0x200000000082305
+05:12:49.736: [pipewire]     Size: 2560x1440
+05:12:49.736: [pipewire]     Framerate: 0/1
+05:12:49.736: [pipewire] Stream 0x558f6b3f4690 state: "streaming" (error: none)
+05:12:50.210: adding 21 milliseconds of audio buffering, total audio buffering is now 21 milliseconds (source: Desktop Audio)
+05:12:50.210: 
+05:13:00.348: This plugin supports grabbing the mouse only for popup windows
+05:13:11.104: This plugin supports grabbing the mouse only for popup windows
+05:13:11.104: This plugin supports grabbing the mouse only for popup windows
+05:13:11.104: This plugin supports grabbing the mouse only for popup windows
+05:13:15.411: This plugin supports grabbing the mouse only for popup windows
+05:13:15.412: This plugin supports grabbing the mouse only for popup windows
+05:13:20.214: This plugin supports grabbing the mouse only for popup windows
+05:13:20.215: This plugin supports grabbing the mouse only for popup windows
+05:13:22.392: This plugin supports grabbing the mouse only for popup windows
+05:13:22.393: This plugin supports grabbing the mouse only for popup windows
+05:13:26.334: This plugin supports grabbing the mouse only for popup windows
+05:13:26.334: This plugin supports grabbing the mouse only for popup windows
+05:13:38.627: ---------------------------------
+05:13:38.627: [FFmpeg VAAPI encoder: 'advanced_video_recording'] settings:
+05:13:38.627: 	device:       /dev/dri/by-path/pci-0000:03:00.0-render
+05:13:38.627: 	rate_control: CBR
+05:13:38.627: 	profile:      100
+05:13:38.627: 	level:        -99
+05:13:38.627: 	qp:           0
+05:13:38.627: 	bitrate:      40000
+05:13:38.627: 	maxrate:      40000
+05:13:38.627: 	keyint:       120
+05:13:38.627: 	width:        2560
+05:13:38.627: 	height:       1440
+05:13:38.627: 	b-frames:     2
+05:13:38.627: 	ffmpeg opts:  
+05:13:38.627: 
+05:13:38.632: libfdk_aac encoder created
+05:13:38.632: libfdk_aac bitrate: 320, channels: 2
+05:13:38.633: ==== Replay Buffer Start ===========================================
+05:13:48.373: [obs-websocket] [WebSocketServer::onOpen] New WebSocket client has connected from [::1]:33046
+05:13:48.375: [obs-websocket] [WebSocketServer::onClose] WebSocket client `[::1]:33046` has disconnected with code `1000` and reason: 
+05:13:48.556: [ffmpeg muxer: 'Replay Buffer'] Wrote replay buffer to '/mnt/media/Videos1/Replay 2026-03-15 05-13-48.mkv'
+05:13:48.564: [Lua: save-obs-replay.lua] Replay buffer saved event fired
+05:13:48.564: [Lua: save-obs-replay.lua] Running: pw-play "/home/lunobe/Dotfiles/scripts/sound_npc_scanner_scanner_photo1.wav" >/dev/null 2>&1 &
+05:13:48.568: [Lua: save-obs-replay.lua] os.execute => ok=0 reason=nil code=nil
+05:13:48.568: [Python: obs_remux.py] Реплей сохранён: /mnt/media/Videos1/Replay 2026-03-15 05-13-48.mkv
+05:13:48.569: [Unknown Script] Начинаю ремукс: Replay 2026-03-15 05-13-48.mkv → /mnt/media/Videos1/Replay 2026-03-15 05-13-48.mp4
+05:13:48.645: [Unknown Script] ✓ Готово. Удалён Replay 2026-03-15 05-13-48.mkv (освобождено 46.9 МБ)
+05:15:06.725: [obs-websocket] [WebSocketServer::onOpen] New WebSocket client has connected from [::1]:44468
+05:15:06.727: [obs-websocket] [WebSocketServer::onClose] WebSocket client `[::1]:44468` has disconnected with code `1000` and reason: 
+05:15:07.175: [ffmpeg muxer: 'Replay Buffer'] Wrote replay buffer to '/mnt/media/Videos1/Replay 2026-03-15 05-15-06.mkv'
+05:15:07.546: [Lua: save-obs-replay.lua] Replay buffer saved event fired
+05:15:07.546: [Lua: save-obs-replay.lua] Running: pw-play "/home/lunobe/Dotfiles/scripts/sound_npc_scanner_scanner_photo1.wav" >/dev/null 2>&1 &
+05:15:07.548: [Lua: save-obs-replay.lua] os.execute => ok=0 reason=nil code=nil
+05:15:07.548: [Python: obs_remux.py] Реплей сохранён: /mnt/media/Videos1/Replay 2026-03-15 05-15-06.mkv
+05:15:07.575: [Unknown Script] Начинаю ремукс: Replay 2026-03-15 05-15-06.mkv → /mnt/media/Videos1/Replay 2026-03-15 05-15-06.mp4
+05:15:10.920: [Unknown Script] ✓ Готово. Удалён Replay 2026-03-15 05-15-06.mkv (освобождено 279.5 МБ)
+05:16:00.340: [obs-websocket] [WebSocketServer::onOpen] New WebSocket client has connected from [::1]:42362
+05:16:00.342: [obs-websocket] [WebSocketServer::onClose] WebSocket client `[::1]:42362` has disconnected with code `1000` and reason: 
+05:16:00.796: [ffmpeg muxer: 'Replay Buffer'] Wrote replay buffer to '/mnt/media/Videos1/Replay 2026-03-15 05-16-00.mkv'
+05:16:01.161: [Lua: save-obs-replay.lua] Replay buffer saved event fired
+05:16:01.161: [Lua: save-obs-replay.lua] Running: pw-play "/home/lunobe/Dotfiles/scripts/sound_npc_scanner_scanner_photo1.wav" >/dev/null 2>&1 &
+05:16:01.163: [Lua: save-obs-replay.lua] os.execute => ok=0 reason=nil code=nil
+05:16:01.163: [Python: obs_remux.py] Реплей сохранён: /mnt/media/Videos1/Replay 2026-03-15 05-16-00.mkv
+05:16:01.191: [Unknown Script] Начинаю ремукс: Replay 2026-03-15 05-16-00.mkv → /mnt/media/Videos1/Replay 2026-03-15 05-16-00.mp4
+05:16:04.633: [Unknown Script] ✓ Готово. Удалён Replay 2026-03-15 05-16-00.mkv (освобождено 287.1 МБ)
+05:16:25.766: [obs-websocket] [WebSocketServer::onOpen] New WebSocket client has connected from [::1]:44154
+05:16:25.768: [obs-websocket] [WebSocketServer::onClose] WebSocket client `[::1]:44154` has disconnected with code `1000` and reason: 
+05:16:26.221: [ffmpeg muxer: 'Replay Buffer'] Wrote replay buffer to '/mnt/media/Videos1/Replay 2026-03-15 05-16-25.mkv'
+05:16:26.226: [Lua: save-obs-replay.lua] Replay buffer saved event fired
+05:16:26.226: [Lua: save-obs-replay.lua] Running: pw-play "/home/lunobe/Dotfiles/scripts/sound_npc_scanner_scanner_photo1.wav" >/dev/null 2>&1 &
+05:16:26.228: [Lua: save-obs-replay.lua] os.execute => ok=0 reason=nil code=nil
+05:16:26.228: [Python: obs_remux.py] Реплей сохранён: /mnt/media/Videos1/Replay 2026-03-15 05-16-25.mkv
+05:16:26.254: [Unknown Script] Начинаю ремукс: Replay 2026-03-15 05-16-25.mkv → /mnt/media/Videos1/Replay 2026-03-15 05-16-25.mp4
+05:16:29.688: [Unknown Script] ✓ Готово. Удалён Replay 2026-03-15 05-16-25.mkv (освобождено 284.4 МБ)

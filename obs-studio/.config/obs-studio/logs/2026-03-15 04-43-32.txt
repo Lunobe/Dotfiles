@@ -1,0 +1,143 @@
+04:43:32.190: Platform: Wayland
+04:43:32.190: CPU Name: AMD Ryzen 7 7800X3D 8-Core Processor
+04:43:32.190: CPU Speed: 4323.938MHz
+04:43:32.191: Physical Cores: 8, Logical Cores: 16
+04:43:32.191: Physical Memory: 47823MB Total, 31215MB Free
+04:43:32.191: Kernel Version: Linux 6.19.6-arch1-1
+04:43:32.191: Distribution: "Arch Linux" Unknown
+04:43:32.191: Desktop Environment: Hyprland (Hyprland)
+04:43:32.191: Session Type: wayland
+04:43:32.191: Current Date/Time: 2026-03-15, 04:43:32 AM
+04:43:32.191: Browser Hardware Acceleration: true
+04:43:32.191: Qt Version: 6.10.2 (runtime), 6.10.2 (compiled)
+04:43:32.191: Portable mode: false
+04:43:32.208: OBS 32.1.0 (linux)
+04:43:32.208: ---------------------------------
+04:43:32.209: ---------------------------------
+04:43:32.209: audio settings reset:
+04:43:32.209: 	samples per sec: 48000
+04:43:32.209: 	speakers:        2
+04:43:32.209: 	max buffering:   960 milliseconds
+04:43:32.209: 	buffering type:  dynamically increasing
+04:43:32.210: ---------------------------------
+04:43:32.210: Initializing OpenGL...
+04:43:32.210: Using EGL/Wayland
+04:43:32.240: Initialized EGL 1.5
+04:43:32.250: Loading up OpenGL on adapter AMD AMD Radeon RX 9070 XT (radeonsi, gfx1201, ACO, DRM 3.64, 6.19.6-arch1-1)
+04:43:32.251: OpenGL loaded successfully, version 4.6 (Core Profile) Mesa 26.0.2-arch1.1, shading language 4.60
+04:43:32.335: ---------------------------------
+04:43:32.335: video settings reset:
+04:43:32.335: 	base resolution:   1920x1080
+04:43:32.335: 	output resolution: 1280x720
+04:43:32.335: 	downscale filter:  Bicubic
+04:43:32.335: 	fps:               30/1
+04:43:32.335: 	format:            NV12
+04:43:32.335: 	YUV mode:          Rec. 709/Partial
+04:43:32.335: NV12 texture support enabled
+04:43:32.335: P010 texture support not available
+04:43:32.338: Audio monitoring device:
+04:43:32.338: 	name: Default
+04:43:32.338: 	id: default
+04:43:32.338: ---------------------------------
+04:43:32.339: Failed to load 'en-US' text for module: 'decklink-captions.so'
+04:43:32.341: Failed to load 'en-US' text for module: 'decklink-output-ui.so'
+04:43:32.342: A DeckLink iterator could not be created.  The DeckLink drivers may not be installed
+04:43:32.342: Failed to initialize module 'decklink.so'
+04:43:32.343: os_dlopen(/usr/lib/obs-plugins/frontend-tools.so->/usr/lib/obs-plugins/frontend-tools.so): libluajit-5.1.so.2: cannot open shared object file: No such file or directory
+04:43:32.343: 
+04:43:32.343: Module '/usr/lib/obs-plugins/frontend-tools.so' not loaded
+04:43:32.361: [pipewire] Available capture sources:
+04:43:32.361: [pipewire]     - Monitor source
+04:43:32.361: [pipewire]     - Window source
+04:43:32.367: v4l2loopback not installed, virtual camera not registered
+04:43:32.380: VAAPI: API version 1.23
+04:43:32.381: FFmpeg VAAPI H264 encoding supported
+04:43:32.384: FFmpeg VAAPI AV1 encoding supported
+04:43:32.387: FFmpeg VAAPI HEVC encoding supported
+04:43:32.392: os_dlopen(libnvidia-encode.so.1->libnvidia-encode.so.1): libnvidia-encode.so.1: cannot open shared object file: No such file or directory
+04:43:32.392: 
+04:43:32.392: NVENC not supported
+04:43:32.392: Failed to initialize module 'obs-nvenc.so'
+04:43:32.424: [obs-websocket] [obs_module_load] you can haz websockets (Version: 5.7.2 | RPC Version: 1)
+04:43:32.424: [obs-websocket] [obs_module_load] Qt version (compile-time): 6.10.2 | Qt version (run-time): 6.10.2
+04:43:32.424: [obs-websocket] [obs_module_load] Linked ASIO Version: 103600
+04:43:32.424: [obs-websocket] [Config::Load] Existing configuration not found, using defaults.
+04:43:32.425: [obs-websocket] [Config::Load] (FirstLoad) Generating new server password.
+04:43:32.427: [obs-websocket] [obs_module_load] Module loaded.
+04:43:32.431: ---------------------------------
+04:43:32.431:   Loaded Modules:
+04:43:32.431:     text-freetype2.so
+04:43:32.431:     rtmp-services.so
+04:43:32.431:     obs-x264.so
+04:43:32.431:     obs-websocket.so
+04:43:32.431:     obs-webrtc.so
+04:43:32.431:     obs-vst.so
+04:43:32.431:     obs-transitions.so
+04:43:32.431:     obs-qsv11.so
+04:43:32.431:     obs-outputs.so
+04:43:32.431:     obs-libfdk.so
+04:43:32.431:     obs-filters.so
+04:43:32.431:     obs-ffmpeg.so
+04:43:32.431:     linux-v4l2.so
+04:43:32.431:     linux-pulseaudio.so
+04:43:32.431:     linux-pipewire.so
+04:43:32.431:     linux-jack.so
+04:43:32.431:     linux-capture.so
+04:43:32.431:     linux-alsa.so
+04:43:32.431:     image-source.so
+04:43:32.431:     decklink-output-ui.so
+04:43:32.431:     decklink-captions.so
+04:43:32.431: ---------------------------------
+04:43:32.431: ---------------------------------
+04:43:32.431: Available Encoders:
+04:43:32.431:   Video Encoders:
+04:43:32.431: 	- ffmpeg_svt_av1 (SVT-AV1)
+04:43:32.431: 	- ffmpeg_aom_av1 (AOM AV1)
+04:43:32.431: 	- ffmpeg_vaapi_tex (FFmpeg VAAPI H.264)
+04:43:32.431: 	- av1_ffmpeg_vaapi_tex (FFmpeg VAAPI AV1)
+04:43:32.431: 	- hevc_ffmpeg_vaapi_tex (FFmpeg VAAPI HEVC)
+04:43:32.431: 	- obs_x264 (x264)
+04:43:32.431:   Audio Encoders:
+04:43:32.431: 	- ffmpeg_aac (FFmpeg AAC)
+04:43:32.431: 	- ffmpeg_opus (FFmpeg Opus)
+04:43:32.431: 	- ffmpeg_pcm_s16le (FFmpeg PCM (16-bit))
+04:43:32.431: 	- ffmpeg_pcm_s24le (FFmpeg PCM (24-bit))
+04:43:32.431: 	- ffmpeg_pcm_f32le (FFmpeg PCM (32-bit float))
+04:43:32.431: 	- ffmpeg_alac (FFmpeg ALAC (24-bit))
+04:43:32.431: 	- ffmpeg_flac (FFmpeg FLAC (16-bit))
+04:43:32.431: 	- libfdk_aac (libfdk AAC)
+04:43:32.431: ==== Startup complete ===============================================
+04:43:32.434: No scene file found, creating default scene
+04:43:32.487: Failed to register with host portal QDBusError("org.freedesktop.portal.Error.Failed", "Could not register app ID: Connection already associated with an application ID")
+04:43:32.487: All scene data cleared
+04:43:32.487: ------------------------------------------------
+04:43:32.496: Device for 'Audio Output Capture' source Desktop Audio is also used for audio monitoring.
+04:43:32.496: Deduplication logic is being applied to all monitored sources.
+04:43:32.496: pulse-input: Server name: 'PulseAudio (on PipeWire 1.6.1) 15.0.0'
+04:43:32.496: pulse-input: Audio format: s16le, 48000 Hz, 2 channels
+04:43:32.496: pulse-input: Started recording from 'alsa_output.usb-Logitech_PRO_X_000000000000-00.analog-stereo.monitor' (default)
+04:43:32.496: pulse-input: Server name: 'PulseAudio (on PipeWire 1.6.1) 15.0.0'
+04:43:32.496: pulse-input: Audio format: s24le, 48000 Hz, 2 channels
+04:43:32.496: pulse-input: Sample format s24le not supported by OBS,using float32le instead for recording
+04:43:32.496: pulse-input: Started recording from 'alsa_input.usb-HP__Inc_HyperX_QuadCast_2_C1W42515DZ-00.analog-stereo' (default)
+04:43:32.497: Switched to scene 'Scene'
+04:43:32.497: Created scene collection 'Untitled' (clean, Untitled.json)
+04:43:32.497: ------------------------------------------------
+04:43:32.515: Device for 'Audio Output Capture' source Desktop Audio is also used for audio monitoring.
+04:43:32.515: Deduplication logic is being applied to all monitored sources.
+04:43:33.041: adding 21 milliseconds of audio buffering, total audio buffering is now 21 milliseconds (source: Desktop Audio)
+04:43:33.041: 
+04:45:09.110: ==== Shutting down ==================================================
+04:45:09.112: pulse-input: Stopped recording from 'alsa_output.usb-Logitech_PRO_X_000000000000-00.analog-stereo.monitor'
+04:45:09.112: pulse-input: Got 3864 packets with 4636800 frames
+04:45:09.112: Deduplication logic stopped.
+04:45:09.112: pulse-input: Stopped recording from 'alsa_input.usb-HP__Inc_HyperX_QuadCast_2_C1W42515DZ-00.analog-stereo'
+04:45:09.112: pulse-input: Got 3864 packets with 4636800 frames
+04:45:09.148: All scene data cleared
+04:45:09.148: ------------------------------------------------
+04:45:09.149: Crash sentinel location '/home/lunobe/.config/obs-studio/.sentinel' does not exist
+04:45:09.153: Tried to call obs_frontend_remove_event_callback with no callbacks!
+04:45:09.214: [obs-websocket] [obs_module_unload] Shutting down...
+04:45:09.214: Tried to call obs_frontend_remove_event_callback with no callbacks!
+04:45:09.214: [obs-websocket] [obs_module_unload] Finished shutting down.
+04:45:09.214: Freeing OBS context data

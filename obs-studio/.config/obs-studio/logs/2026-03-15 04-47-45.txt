@@ -1,0 +1,274 @@
+04:47:45.990: Platform: Wayland
+04:47:45.990: CPU Name: AMD Ryzen 7 7800X3D 8-Core Processor
+04:47:45.990: CPU Speed: 3997.192MHz
+04:47:45.990: Physical Cores: 8, Logical Cores: 16
+04:47:45.990: Physical Memory: 47823MB Total, 29329MB Free
+04:47:45.990: Kernel Version: Linux 6.19.6-arch1-1
+04:47:45.990: Distribution: "Arch Linux" Unknown
+04:47:45.990: Desktop Environment: Hyprland (Hyprland)
+04:47:45.990: Session Type: wayland
+04:47:45.991: Current Date/Time: 2026-03-15, 04:47:45 AM
+04:47:45.991: Browser Hardware Acceleration: true
+04:47:45.991: Qt Version: 6.10.2 (runtime), 6.10.2 (compiled)
+04:47:45.991: Portable mode: false
+04:47:46.006: OBS 32.1.0 (linux)
+04:47:46.006: ---------------------------------
+04:47:46.006: ---------------------------------
+04:47:46.006: audio settings reset:
+04:47:46.006: 	samples per sec: 48000
+04:47:46.006: 	speakers:        2
+04:47:46.006: 	max buffering:   960 milliseconds
+04:47:46.006: 	buffering type:  dynamically increasing
+04:47:46.007: ---------------------------------
+04:47:46.007: Initializing OpenGL...
+04:47:46.007: Using EGL/Wayland
+04:47:46.036: Initialized EGL 1.5
+04:47:46.046: Loading up OpenGL on adapter AMD AMD Radeon RX 9070 XT (radeonsi, gfx1201, ACO, DRM 3.64, 6.19.6-arch1-1)
+04:47:46.046: OpenGL loaded successfully, version 4.6 (Core Profile) Mesa 26.0.2-arch1.1, shading language 4.60
+04:47:46.066: ---------------------------------
+04:47:46.066: video settings reset:
+04:47:46.066: 	base resolution:   1920x1080
+04:47:46.066: 	output resolution: 1280x720
+04:47:46.066: 	downscale filter:  Bicubic
+04:47:46.066: 	fps:               30/1
+04:47:46.066: 	format:            NV12
+04:47:46.066: 	YUV mode:          Rec. 709/Partial
+04:47:46.066: NV12 texture support enabled
+04:47:46.066: P010 texture support not available
+04:47:46.067: Audio monitoring device:
+04:47:46.067: 	name: Default
+04:47:46.067: 	id: default
+04:47:46.069: ---------------------------------
+04:47:46.070: Failed to load 'en-US' text for module: 'decklink-captions.so'
+04:47:46.070: Failed to load 'en-US' text for module: 'decklink-output-ui.so'
+04:47:46.071: A DeckLink iterator could not be created.  The DeckLink drivers may not be installed
+04:47:46.071: Failed to initialize module 'decklink.so'
+04:47:46.147: [pipewire] Available capture sources:
+04:47:46.147: [pipewire]     - Monitor source
+04:47:46.147: [pipewire]     - Window source
+04:47:46.152: v4l2loopback not installed, virtual camera not registered
+04:47:46.163: VAAPI: API version 1.23
+04:47:46.163: FFmpeg VAAPI H264 encoding supported
+04:47:46.167: FFmpeg VAAPI AV1 encoding supported
+04:47:46.170: FFmpeg VAAPI HEVC encoding supported
+04:47:46.172: os_dlopen(libnvidia-encode.so.1->libnvidia-encode.so.1): libnvidia-encode.so.1: cannot open shared object file: No such file or directory
+04:47:46.172: 
+04:47:46.172: NVENC not supported
+04:47:46.172: Failed to initialize module 'obs-nvenc.so'
+04:47:46.188: [obs-websocket] [obs_module_load] you can haz websockets (Version: 5.7.2 | RPC Version: 1)
+04:47:46.188: [obs-websocket] [obs_module_load] Qt version (compile-time): 6.10.2 | Qt version (run-time): 6.10.2
+04:47:46.188: [obs-websocket] [obs_module_load] Linked ASIO Version: 103600
+04:47:46.190: [obs-websocket] [obs_module_load] Module loaded.
+04:47:46.192: ---------------------------------
+04:47:46.192:   Loaded Modules:
+04:47:46.192:     text-freetype2.so
+04:47:46.192:     rtmp-services.so
+04:47:46.192:     obs-x264.so
+04:47:46.192:     obs-websocket.so
+04:47:46.192:     obs-webrtc.so
+04:47:46.192:     obs-vst.so
+04:47:46.192:     obs-transitions.so
+04:47:46.192:     obs-qsv11.so
+04:47:46.192:     obs-outputs.so
+04:47:46.192:     obs-libfdk.so
+04:47:46.192:     obs-filters.so
+04:47:46.192:     obs-ffmpeg.so
+04:47:46.192:     linux-v4l2.so
+04:47:46.192:     linux-pulseaudio.so
+04:47:46.192:     linux-pipewire.so
+04:47:46.192:     linux-jack.so
+04:47:46.192:     linux-capture.so
+04:47:46.192:     linux-alsa.so
+04:47:46.192:     image-source.so
+04:47:46.192:     frontend-tools.so
+04:47:46.192:     decklink-output-ui.so
+04:47:46.192:     decklink-captions.so
+04:47:46.192: ---------------------------------
+04:47:46.192: ---------------------------------
+04:47:46.192: Available Encoders:
+04:47:46.192:   Video Encoders:
+04:47:46.193: 	- ffmpeg_svt_av1 (SVT-AV1)
+04:47:46.193: 	- ffmpeg_aom_av1 (AOM AV1)
+04:47:46.193: 	- ffmpeg_vaapi_tex (FFmpeg VAAPI H.264)
+04:47:46.193: 	- av1_ffmpeg_vaapi_tex (FFmpeg VAAPI AV1)
+04:47:46.193: 	- hevc_ffmpeg_vaapi_tex (FFmpeg VAAPI HEVC)
+04:47:46.193: 	- obs_x264 (x264)
+04:47:46.193:   Audio Encoders:
+04:47:46.193: 	- ffmpeg_aac (FFmpeg AAC)
+04:47:46.193: 	- ffmpeg_opus (FFmpeg Opus)
+04:47:46.193: 	- ffmpeg_pcm_s16le (FFmpeg PCM (16-bit))
+04:47:46.193: 	- ffmpeg_pcm_s24le (FFmpeg PCM (24-bit))
+04:47:46.193: 	- ffmpeg_pcm_f32le (FFmpeg PCM (32-bit float))
+04:47:46.193: 	- ffmpeg_alac (FFmpeg ALAC (24-bit))
+04:47:46.193: 	- ffmpeg_flac (FFmpeg FLAC (16-bit))
+04:47:46.193: 	- libfdk_aac (libfdk AAC)
+04:47:46.193: ==== Startup complete ===============================================
+04:47:46.221: Failed to register with host portal QDBusError("org.freedesktop.portal.Error.Failed", "Could not register app ID: Connection already associated with an application ID")
+04:47:46.221: All scene data cleared
+04:47:46.221: ------------------------------------------------
+04:47:46.224: Device for 'Audio Output Capture' source Desktop Audio is also used for audio monitoring.
+04:47:46.224: Deduplication logic is being applied to all monitored sources.
+04:47:46.224: pulse-input: Server name: 'PulseAudio (on PipeWire 1.6.1) 15.0.0'
+04:47:46.224: pulse-input: Audio format: s16le, 48000 Hz, 2 channels
+04:47:46.224: pulse-input: Started recording from 'alsa_output.usb-Logitech_PRO_X_000000000000-00.analog-stereo.monitor' (default)
+04:47:46.225: [Loaded global audio device]: 'Desktop Audio'
+04:47:46.225: pulse-input: Server name: 'PulseAudio (on PipeWire 1.6.1) 15.0.0'
+04:47:46.225: pulse-input: Audio format: s24le, 48000 Hz, 2 channels
+04:47:46.225: pulse-input: Sample format s24le not supported by OBS,using float32le instead for recording
+04:47:46.225: pulse-input: Started recording from 'alsa_input.usb-HP__Inc_HyperX_QuadCast_2_C1W42515DZ-00.analog-stereo' (default)
+04:47:46.225: [Loaded global audio device]: 'Mic/Aux'
+04:47:46.225: Switched to scene 'Scene'
+04:47:46.225: ------------------------------------------------
+04:47:46.225: Loaded scenes:
+04:47:46.225: - scene 'Scene':
+04:47:46.225: ------------------------------------------------
+04:47:46.248: Device for 'Audio Output Capture' source Desktop Audio is also used for audio monitoring.
+04:47:46.248: Deduplication logic is being applied to all monitored sources.
+04:47:46.775: adding 42 milliseconds of audio buffering, total audio buffering is now 42 milliseconds (source: Desktop Audio)
+04:47:46.775: 
+04:47:52.661: This plugin supports grabbing the mouse only for popup windows
+04:47:52.662: This plugin supports grabbing the mouse only for popup windows
+04:47:56.202: This plugin supports grabbing the mouse only for popup windows
+04:47:57.854: This plugin supports grabbing the mouse only for popup windows
+04:47:57.855: This plugin supports grabbing the mouse only for popup windows
+04:47:57.856: This plugin supports grabbing the mouse only for popup windows
+04:47:59.784: This plugin supports grabbing the mouse only for popup windows
+04:47:59.785: This plugin supports grabbing the mouse only for popup windows
+04:48:02.246: This plugin supports grabbing the mouse only for popup windows
+04:48:02.247: This plugin supports grabbing the mouse only for popup windows
+04:48:22.292: This plugin supports grabbing the mouse only for popup windows
+04:48:24.758: This plugin supports grabbing the mouse only for popup windows
+04:48:24.759: This plugin supports grabbing the mouse only for popup windows
+04:48:25.784: This plugin supports grabbing the mouse only for popup windows
+04:48:25.785: This plugin supports grabbing the mouse only for popup windows
+04:48:28.931: This plugin supports grabbing the mouse only for popup windows
+04:48:28.931: This plugin supports grabbing the mouse only for popup windows
+04:48:28.932: This plugin supports grabbing the mouse only for popup windows
+04:48:38.853: This plugin supports grabbing the mouse only for popup windows
+04:48:39.850: This plugin supports grabbing the mouse only for popup windows
+04:48:39.850: This plugin supports grabbing the mouse only for popup windows
+04:48:39.852: This plugin supports grabbing the mouse only for popup windows
+04:48:45.235: pulse-am: Server name: 'PulseAudio (on PipeWire 1.6.1) 15.0.0'
+04:48:45.236: pulse-am: Audio format: s16le, 48000 Hz, 2 channels
+04:48:45.236: pulse-am: Started Monitoring in 'alsa_output.usb-Logitech_PRO_X_000000000000-00.analog-stereo'
+04:48:45.873: pulse-am: Stopped Monitoring in 'alsa_output.usb-Logitech_PRO_X_000000000000-00.analog-stereo'
+04:48:45.873: pulse-am: Got 26 packets with 31200 frames
+04:48:46.355: pulse-am: Server name: 'PulseAudio (on PipeWire 1.6.1) 15.0.0'
+04:48:46.355: pulse-am: Audio format: s16le, 48000 Hz, 2 channels
+04:48:46.355: pulse-am: Started Monitoring in 'alsa_output.usb-Logitech_PRO_X_000000000000-00.analog-stereo'
+04:48:46.817: pulse-am: Stopped Monitoring in 'alsa_output.usb-Logitech_PRO_X_000000000000-00.analog-stereo'
+04:48:46.817: pulse-am: Got 19 packets with 22800 frames
+04:49:04.019: This plugin supports grabbing the mouse only for popup windows
+04:49:05.972: This plugin supports grabbing the mouse only for popup windows
+04:49:05.973: This plugin supports grabbing the mouse only for popup windows
+04:49:05.973: This plugin supports grabbing the mouse only for popup windows
+04:49:14.865: This plugin supports grabbing the mouse only for popup windows
+04:49:14.866: This plugin supports grabbing the mouse only for popup windows
+04:49:17.078: This plugin supports grabbing the mouse only for popup windows
+04:49:18.989: This plugin supports grabbing the mouse only for popup windows
+04:49:18.989: This plugin supports grabbing the mouse only for popup windows
+04:49:18.990: This plugin supports grabbing the mouse only for popup windows
+04:49:22.605: This plugin supports grabbing the mouse only for popup windows
+04:49:22.606: This plugin supports grabbing the mouse only for popup windows
+04:49:27.146: This plugin supports grabbing the mouse only for popup windows
+04:49:27.147: This plugin supports grabbing the mouse only for popup windows
+04:49:28.698: This plugin supports grabbing the mouse only for popup windows
+04:49:30.952: This plugin supports grabbing the mouse only for popup windows
+04:49:30.952: This plugin supports grabbing the mouse only for popup windows
+04:49:30.953: This plugin supports grabbing the mouse only for popup windows
+04:50:02.937: PipeWire initialized
+04:50:02.938: User added source 'Screen Capture (PipeWire)' (pipewire-screen-capture-source) to scene 'Scene'
+04:50:02.946: [pipewire] Screencast session created
+04:50:06.025: [pipewire] Asking for monitor and window
+04:50:06.027: [pipewire] source selected, setting up screencast
+04:50:06.031: [pipewire] Server version: 1.6.1
+04:50:06.031: [pipewire] Library version: 1.6.1
+04:50:06.031: [pipewire] Header version: 1.6.1
+04:50:06.031: [pipewire] Created stream 0x55a3bdf91d10
+04:50:06.031: [pipewire] Stream 0x55a3bdf91d10 state: "connecting" (error: none)
+04:50:06.031: [pipewire] Playing stream 0x55a3bdf91d10
+04:50:06.037: [pipewire] Stream 0x55a3bdf91d10 state: "paused" (error: none)
+04:50:06.038: [pipewire] Negotiated format:
+04:50:06.038: [pipewire]     Format: 12 (Spa:Enum:VideoFormat:BGRA)
+04:50:06.038: [pipewire]     Modifier: 0x0
+04:50:06.038: [pipewire]     Size: 2560x1440
+04:50:06.038: [pipewire]     Framerate: 0/1
+04:50:06.038: [pipewire] Negotiated format:
+04:50:06.038: [pipewire]     Format: 12 (Spa:Enum:VideoFormat:BGRA)
+04:50:06.038: [pipewire]     Modifier: 0x200000000082305
+04:50:06.038: [pipewire]     Size: 2560x1440
+04:50:06.038: [pipewire]     Framerate: 0/1
+04:50:06.039: [pipewire] Stream 0x55a3bdf91d10 state: "streaming" (error: none)
+04:50:47.787: Settings changed (outputs)
+04:50:47.787: ------------------------------------------------
+04:51:29.635: Settings changed (outputs)
+04:51:29.635: ------------------------------------------------
+04:51:43.157: Settings changed (outputs)
+04:51:43.157: ------------------------------------------------
+04:51:54.168: ---------------------------------
+04:51:54.168: video settings reset:
+04:51:54.168: 	base resolution:   2560x1440
+04:51:54.168: 	output resolution: 2560x1440
+04:51:54.168: 	downscale filter:  Bicubic
+04:51:54.168: 	fps:               60/1
+04:51:54.168: 	format:            NV12
+04:51:54.168: 	YUV mode:          Rec. 709/Partial
+04:51:54.168: NV12 texture support enabled
+04:51:54.168: P010 texture support not available
+04:51:54.170: Settings changed (outputs, video)
+04:51:54.170: ------------------------------------------------
+05:01:14.570: Settings changed (outputs)
+05:01:14.570: ------------------------------------------------
+05:01:42.231: [Python: obs_remux.py] OBS MKV → MP4 Auto-Remuxer загружен.
+05:01:42.231: [Python: obs_remux.py] Авто-ремукс включён. Вывод: рядом с MKV
+05:01:42.231: [obs-scripting]: Loaded python script: obs_remux.py
+05:01:42.231: [Python: obs_remux.py] Авто-ремукс включён. Вывод: рядом с MKV
+05:01:42.236: virtual void QtWaylandClient::QWaylandTextInputv3::disableSurface(wl_surface*) Try to disable surface 0x55a3bd4c8a00 with focusing surface 0x55a3bec73e70
+05:01:49.131: [Lua: save-obs-replay.lua] Beep script loaded
+05:01:49.131: [obs-scripting]: Loaded lua script: save-obs-replay.lua
+05:01:49.131: [Lua: save-obs-replay.lua] Updated settings: file= player=pw-play flatpak_host=false
+05:01:49.135: virtual void QtWaylandClient::QWaylandTextInputv3::disableSurface(wl_surface*) Try to disable surface 0x55a3bd4c8a00 with focusing surface 0x55a3bf361450
+05:01:51.108: [Lua: save-obs-replay.lua] Updated settings: file=/home/lunobe/Dotfiles/scripts/sound_npc_scanner_scanner_photo1.wav player=pw-play flatpak_host=false
+05:01:51.108: virtual void QtWaylandClient::QWaylandTextInputv3::disableSurface(wl_surface*) Try to disable surface 0x55a3bd4c8a00 with focusing surface 0x55a3be6890e0
+05:02:00.870: [obs-websocket] [SettingsDialog::SaveFormData] A setting was changed which requires a server restart.
+05:02:00.870: [obs-websocket] [WebSocketServer::Stop] Call to Stop() but the server is not listening.
+05:02:00.870: [obs-websocket] [WebSocketServer::Start] Not locked to IPv4 bindings
+05:02:00.870: [obs-websocket] [WebSocketServer::ServerRunner] IO thread started.
+05:02:00.870: [obs-websocket] [WebSocketServer::Start] Server started successfully on port 4455. Possible connect address: 10.100.102.16
+05:05:40.957: ---------------------------------
+05:05:40.957: [FFmpeg VAAPI encoder: 'advanced_video_recording'] settings:
+05:05:40.957: 	device:       /dev/dri/by-path/pci-0000:03:00.0-render
+05:05:40.957: 	rate_control: CBR
+05:05:40.957: 	profile:      100
+05:05:40.957: 	level:        -99
+05:05:40.957: 	qp:           0
+05:05:40.957: 	bitrate:      40000
+05:05:40.957: 	maxrate:      40000
+05:05:40.957: 	keyint:       120
+05:05:40.957: 	width:        2560
+05:05:40.957: 	height:       1440
+05:05:40.957: 	b-frames:     2
+05:05:40.957: 	ffmpeg opts:  
+05:05:40.957: 
+05:05:40.961: libfdk_aac encoder created
+05:05:40.961: libfdk_aac bitrate: 320, channels: 2
+05:05:40.962: ==== Replay Buffer Start ===========================================
+05:05:47.200: [obs-websocket] [WebSocketServer::onOpen] New WebSocket client has connected from [::1]:42222
+05:05:47.201: [obs-websocket] [WebSocketServer::onClose] WebSocket client `[::1]:42222` has disconnected with code `1000` and reason: 
+05:05:47.366: [ffmpeg muxer: 'Replay Buffer'] Wrote replay buffer to '/mnt/media/Videos1/Replay 2026-03-15 05-05-47.mkv'
+05:05:47.723: [Lua: save-obs-replay.lua] Replay buffer saved event fired
+05:05:47.723: [Lua: save-obs-replay.lua] Running: pw-play "/home/lunobe/Dotfiles/scripts/sound_npc_scanner_scanner_photo1.wav" >/dev/null 2>&1 &
+05:05:47.726: [Lua: save-obs-replay.lua] os.execute => ok=0 reason=nil code=nil
+05:05:47.726: [Python: obs_remux.py] Реплей сохранён: /mnt/media/Videos1/Replay 2026-03-15 05-05-47.mkv
+05:05:47.727: [Unknown Script] Начинаю ремукс: Replay 2026-03-15 05-05-47.mkv → /mnt/media/Videos1/Replay 2026-03-15 05-05-47.mp4
+05:05:48.152: [Unknown Script] ✓ Готово. Удалён Replay 2026-03-15 05-05-47.mkv (освобождено 30.1 МБ)
+05:09:55.250: [obs-websocket] [WebSocketServer::onOpen] New WebSocket client has connected from [::1]:47718
+05:09:55.252: [obs-websocket] [WebSocketServer::onClose] WebSocket client `[::1]:47718` has disconnected with code `1000` and reason: 
+05:09:55.697: [ffmpeg muxer: 'Replay Buffer'] Wrote replay buffer to '/mnt/media/Videos1/Replay 2026-03-15 05-09-55.mkv'
+05:09:56.045: [Lua: save-obs-replay.lua] Replay buffer saved event fired
+05:09:56.045: [Lua: save-obs-replay.lua] Running: pw-play "/home/lunobe/Dotfiles/scripts/sound_npc_scanner_scanner_photo1.wav" >/dev/null 2>&1 &
+05:09:56.047: [Lua: save-obs-replay.lua] os.execute => ok=0 reason=nil code=nil
+05:09:56.047: [Python: obs_remux.py] Реплей сохранён: /mnt/media/Videos1/Replay 2026-03-15 05-09-55.mkv
+05:09:56.075: [Unknown Script] Начинаю ремукс: Replay 2026-03-15 05-09-55.mkv → /mnt/media/Videos1/Replay 2026-03-15 05-09-55.mp4
+05:09:59.439: [Unknown Script] ✓ Готово. Удалён Replay 2026-03-15 05-09-55.mkv (освобождено 280.3 МБ)
+05:11:29.685: The Wayland connection broke. Did the Wayland compositor die?
