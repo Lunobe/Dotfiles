@@ -1,7 +1,0 @@
-[Desktop Entry]
-Name=Flatseal
-Comment=Graphical utility to review and modify permissions from your Flatpak applications. 
-Exec=flatpak run com.github.tchx84.Flatseal
-Terminal=false
-Type=Application
-Categories=Social;Chat;

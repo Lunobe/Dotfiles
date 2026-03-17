@@ -6,6 +6,7 @@ window-rule {
 window-rule {
     match app-id=r#"firefox$"# title="^Picture-in-Picture$"
     match app-id=r#"^com\.github\.hluk\.copyq$"#
+    match app-id=r#"^net\.davidotek\.pupgui2$"#
     match app-id=r#"^waypaper$"#
 
     open-floating true
