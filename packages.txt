@@ -1,12 +1,14 @@
 sudo pacman -Qee
 
 amd-ucode 20260309-1
+android-tools 35.0.2-23
 base 3-3
 base-devel 1-2
 btop 1.4.6-1
 btrfs-assistant 2.2-4
 btrfs-progs 6.19-1
 copyq 13.0.0-1
+dotnet-runtime-6.0 6.0.36.sdk136-2
 efibootmgr 18-3
 fastfetch 2.60.0-1
 firefox 148.0.2-1
@@ -37,9 +39,12 @@ mpv 1:0.41.0-3
 nano 8.7.1-1
 networkmanager 1.56.0-1
 niri 25.11-2
+noto-fonts-emoji 1:2.051-1
 nwg-look 1.0.6-1
 obs-studio 32.1.0-1
+opencomposite-git r1232.cff07db-1
 os-prober 1.84-1
+otf-font-awesome 7.2.0-1
 pavucontrol 1:6.2-1
 pipewire-pulse 1:1.6.2-1
 polkit-gnome 0.105-12
@@ -59,6 +64,7 @@ swww 0.11.2-1
 telegram-desktop 6.6.3-1
 terminus-font 4.49.1-8
 tree 2.3.1-1
+ufw 0.36.2-7
 unzip 6.0-23
 vesktop 1.6.5-1
 vkbasalt 0.3.2.10-1
@@ -67,8 +73,11 @@ vulkan-tools 1.4.341.0-2
 waybar 0.15.0-2
 waypaper 2.7-1
 wget 1.25.0-3
+wivrn-dashboard 26.2.3-1
+woff2-font-awesome 7.2.0-1
 wofi 1.5.3-1
 xdg-desktop-portal-gnome 49.0-1
+xrizer-git 0.4.r31.gfc9b0cc-1
 xwayland-satellite 0.8.1-1
 yay 12.5.7-1
 yay-debug 12.5.7-1
