@@ -27,3 +27,4 @@ alias ...='cd .. && cd ..'
 alias ....='cd .. && cd .. && cd ..'
 alias .....='cd .. && cd .. && cd .. && cd ..'
 
+fastfetch

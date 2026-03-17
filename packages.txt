@@ -8,6 +8,7 @@ btrfs-assistant 2.2-4
 btrfs-progs 6.19-1
 copyq 13.0.0-1
 efibootmgr 18-3
+fastfetch 2.60.0-1
 firefox 148.0.2-1
 flatpak 1:1.16.3-1
 gamemode 1.8.2-1
