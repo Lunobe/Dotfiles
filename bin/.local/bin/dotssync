@@ -1,0 +1,11 @@
+#!/bin/bash
+    if [ -z "$1" ]; then
+        echo "Ошибка: укажи описание коммита."
+        return 1
+    fi
+  
+    { echo "sudo pacman -Qee"; echo; yay -Qee; } > ~/Dotfiles/packages.txt
+
+    git -C ~/Dotfiles add -A
+    git -C ~/Dotfiles commit -m "$1"
+    git -C ~/Dotfiles push -u origin main

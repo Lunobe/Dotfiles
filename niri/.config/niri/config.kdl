@@ -1,0 +1,8 @@
+include "conf/input.kdl"
+include "conf/outputs.kdl"
+include "conf/layout.kdl"
+include "conf/startup.kdl"
+include "conf/window-rules.kdl"
+include "conf/binds.kdl"
+include "conf/misc.kdl"
+include "conf/environment.kdl"
