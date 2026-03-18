@@ -1,5 +1,7 @@
 bin/.local/bin/Discord/Discord
 
+scripts/__pycache__
+
 *.log
 *.tmp
 .cache/
