@@ -4,7 +4,7 @@
         return 1
     fi
   
-    { echo "sudo pacman -Qee"; echo; yay -Qee; } > ~/Dotfiles/packages.txt
+    yay -Qee > ~/Dotfiles/packages.txt
 
     git -C ~/Dotfiles add -A
     git -C ~/Dotfiles commit -m "$1"
