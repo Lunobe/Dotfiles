@@ -1,26 +1,26 @@
 #!/bin/bash
 if [ -z "$1" ]; then
-    echo "Ошибка: укажи описание коммита."
+    echo "Error: provide a commit message."
     exit 1
 fi
 
-# Обновляем список пакетов
+# Update package list
 yay -Qeq > ~/Dotfiles/packages.txt
 
 cd ~/Dotfiles || exit
 
-# Показываем, что изменилось, но БЕЗ игнорируемых файлов
-echo "--- Текущие изменения ---"
+# Show what changed, but WITHOUT ignored files
+echo "--- Current changes ---"
 git status --short
 
-# Спрашиваем подтверждение, если есть новые файлы
-# (Чтобы случайно не запушить то, что забыл внести в .gitignore)
-read -p "Пушим? (y/n): " confirm
+# Ask for confirmation if there are new files
+# (To avoid accidentally pushing something not in .gitignore)
+read -p "Push? (y/n): " confirm
 if [[ $confirm == [yY] ]]; then
     git add -A
     git commit -m "$1"
     git push -u origin main
-    echo "✅ Улетело в облако!"
+    echo "✅ Pushed to the cloud!"
 else
-    echo "❌ Отмена. Проверь файлы."
+    echo "❌ Cancelled. Check the files."
 fi
