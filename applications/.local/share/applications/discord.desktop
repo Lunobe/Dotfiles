@@ -1,8 +1,0 @@
-[Desktop Entry]
-Name=Discord
-Comment=All-in-one voice and text chat for gamers
-Exec=/home/lunobe/.local/bin/Discord/Discord
-Icon=/home/lunobe/.local/bin/Discord/discord.png
-Terminal=false
-Type=Application
-Categories=Social;Chat;
