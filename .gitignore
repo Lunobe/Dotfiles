@@ -1,13 +1,20 @@
-bin/.local/bin/Discord/Discord
-local/share/copyq
-local/share/gedit
-local/share/gvfs-metadata
-local/share/nautilus
-local/share/recently-used.xbel
-local/share/Trash
+*
 
-scripts/__pycache__
+!.gitignore
+!README.md
+!packages.txt
+!install.sh
 
-*.log
-*.tmp
-.cache/
+!bash/
+!config/
+!scripts/
+!wallpapers/
+!local/
+
+local/share/*
+!local/share/applications/
+!local/share/themes/
+
+__pycache__/
+*.swp
+.DS_Store

@@ -1,11 +1,26 @@
 #!/bin/bash
-    if [ -z "$1" ]; then
-        echo "Ошибка: укажи описание коммита."
-        return 1
-    fi
-  
-    yay -Qee > ~/Dotfiles/packages.txt
+if [ -z "$1" ]; then
+    echo "Ошибка: укажи описание коммита."
+    exit 1
+fi
 
-    git -C ~/Dotfiles add -A
-    git -C ~/Dotfiles commit -m "$1"
-    git -C ~/Dotfiles push -u origin main
+# Обновляем список пакетов
+yay -Qee > ~/Dotfiles/packages.txt
+
+cd ~/Dotfiles || exit
+
+# Показываем, что изменилось, но БЕЗ игнорируемых файлов
+echo "--- Текущие изменения ---"
+git status --short
+
+# Спрашиваем подтверждение, если есть новые файлы
+# (Чтобы случайно не запушить то, что забыл внести в .gitignore)
+read -p "Пушим? (y/n): " confirm
+if [[ $confirm == [yY] ]]; then
+    git add -A
+    git commit -m "$1"
+    git push -u origin main
+    echo "✅ Улетело в облако!"
+else
+    echo "❌ Отмена. Проверь файлы."
+fi
