@@ -1,4 +1,10 @@
 bin/.local/bin/Discord/Discord
+local/share/copyq
+local/share/gedit
+local/share/gvfs-metadata
+local/share/nautilus
+local/share/recently-used.xbel
+local/share/Trash
 
 scripts/__pycache__
 
