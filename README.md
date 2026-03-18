@@ -1,3 +1,5 @@
 # Dotfiles
 just my dotfiles. live with it
-# Dotfiles
+
+
+installation script does backup before in home
