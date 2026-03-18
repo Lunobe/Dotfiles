@@ -28,3 +28,6 @@ alias ....='cd .. && cd .. && cd ..'
 alias .....='cd .. && cd .. && cd .. && cd ..'
 
 fastfetch
+
+# Created by `pipx` on 2026-03-18 21:08:50
+export PATH="$PATH:/home/lunobe/Dotfiles/bin/.local/bin"
