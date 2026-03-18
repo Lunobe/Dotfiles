@@ -1,85 +1,89 @@
-#!/bin/bash
+#!/usr/bin/env bash
+set -e
 
-# --- 1. ПРОВЕРКА И УСТАНОВКА YAY ---
-if ! command -v yay &> /dev/null; then
-    read -p "yay не найден. Хочешь установить? (y/n): " install_yay
-    if [[ "$install_yay" =~ ^[Yy]$ ]]; then
-        echo "Установка yay..."
-        sudo pacman -S --needed --noconfirm git base-devel
+DOTFILES_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+BACKUP_DIR="$HOME/$(date '+%Y-%m-%d_%H-%M-%S')-dotfiles-backup"
+
+# ──────────────────────────────────────────────
+# 1. Optional package installation
+# ──────────────────────────────────────────────
+read -rp "Install packages from packages.txt? [y/N] " install_pkgs
+if [[ "$install_pkgs" =~ ^[Yy]$ ]]; then
+    if ! command -v yay &>/dev/null; then
+        echo "yay not found — installing yay first..."
+        sudo pacman -S --needed git base-devel
         git clone https://aur.archlinux.org/yay.git
-        cd yay || exit
-        makepkg -si --noconfirm
+        cd yay
+        makepkg -si
         cd ..
         rm -rf yay
-    else
-        echo "Пропуск установки пакетов (yay не найден)."
     fi
+    echo "Installing packages..."
+    yay -S --needed - < "$DOTFILES_DIR/packages.txt"
 fi
 
-# --- 2. УСТАНОВКА ПАКЕТОВ ---
-if [ -f "packages.txt" ] && command -v yay &> /dev/null; then
-    read -p "Установить пакеты из packages.txt? (y/n): " answer
-    if [[ "$answer" =~ ^[Yy]$ ]]; then
-        echo "Установка пакетов..."
-        yay -S --noconfirm --needed - < packages.txt
-    fi
-fi
+# ──────────────────────────────────────────────
+# 2. Back up conflicting directories/files
+# ──────────────────────────────────────────────
 
-# --- 3. НАСТРОЙКА БЭКАПА ---
-BACKUP_DIR="$HOME/dotfiles_backup_$(date +%Y%m%d_%H%M%S)"
+# Map: <stow package dir> → <stow target dir>
+declare -A STOW_TARGETS=(
+    ["$DOTFILES_DIR/bash"]="$HOME"
+    ["$DOTFILES_DIR/config"]="$HOME/.config"
+    ["$DOTFILES_DIR/local"]="$HOME/.local"
+)
 
-backup_and_remove() {
-    local target_path="$1"
-    # Проверяем, существует ли файл/папка или даже битая симссылка
-    if [ -e "$target_path" ] || [ -L "$target_path" ]; then
-        # Создаем папку бэкапа только если нашли что бэкапить
-        [ ! -d "$BACKUP_DIR" ] && mkdir -p "$BACKUP_DIR"
-        
-        echo "Бэкап: $target_path"
-        local relative_path=$(echo "$target_path" | sed "s|$HOME/||")
-        mkdir -p "$BACKUP_DIR/$(dirname "$relative_path")"
-        mv "$target_path" "$BACKUP_DIR/$relative_path"
-    fi
-}
+needs_backup=false
 
-echo "--- Подготовка системы (удаление старых конфигов и бэкап) ---"
+for pkg_dir in "${!STOW_TARGETS[@]}"; do
+    target="${STOW_TARGETS[$pkg_dir]}"
+    while IFS= read -r -d '' entry; do
+        # Relative path inside the package
+        rel="${entry#$pkg_dir/}"
+        dest="$target/$rel"
+        # Back up only if dest exists and is NOT already a stow symlink pointing here
+        if [[ -e "$dest" || -L "$dest" ]]; then
+            if [[ -L "$dest" ]] && [[ "$(readlink -f "$dest")" == "$entry" ]]; then
+                continue  # already correctly stowed
+            fi
+            needs_backup=true
+            break 2
+        fi
+    done < <(find "$pkg_dir" -mindepth 1 -maxdepth 1 -print0)
+done
 
-# --- 4. ОБРАБОТКА ~/.config ---
-if [ -d "config" ]; then
-    for item in config/*; do
-        [ -e "$item" ] || continue
-        backup_and_remove "$HOME/.config/$(basename "$item")"
+if $needs_backup; then
+    echo "Backing up conflicting files/dirs to: $BACKUP_DIR"
+    mkdir -p "$BACKUP_DIR"
+
+    for pkg_dir in "${!STOW_TARGETS[@]}"; do
+        target="${STOW_TARGETS[$pkg_dir]}"
+        while IFS= read -r -d '' entry; do
+            rel="${entry#$pkg_dir/}"
+            dest="$target/$rel"
+            if [[ -e "$dest" || -L "$dest" ]]; then
+                if [[ -L "$dest" ]] && [[ "$(readlink -f "$dest")" == "$entry" ]]; then
+                    continue
+                fi
+                backup_dest="$BACKUP_DIR/$rel"
+                mkdir -p "$(dirname "$backup_dest")"
+                echo "  Backing up: $dest → $backup_dest"
+                mv "$dest" "$backup_dest"
+            fi
+        done < <(find "$pkg_dir" -mindepth 1 -maxdepth 1 -print0)
     done
-fi
-
-# --- 5. ОБРАБОТКА ~/.local (ИСПРАВЛЕНО) ---
-# Мы ищем только те папки/файлы, которые ЕСТЬ в твоем Dotfiles/local
-if [ -d "local" ]; then
-    # Проходим по всем объектам внутри local/ (например: bin, share)
-    find local -mindepth 1 -maxdepth 2 | while read -r src_item; do
-        # Превращаем путь "local/share/themes" в "/home/user/.local/share/themes"
-        target_path=$(echo "$src_item" | sed "s|^local|$HOME/.local|")
-        
-        # Бэкапим только если этот конкретный путь существует в системе
-        backup_and_remove "$target_path"
-    done
-fi
-
-# --- 6. ОБРАБОТКА ДОМАШНЕЙ ПАПКИ (bash) ---
-if [ -d "bash" ]; then
-    find bash -maxdepth 1 -type f -name ".*" | while read -r f; do
-        backup_and_remove "$HOME/$(basename "$f")"
-    done
-fi
-
-# --- 7. ЗАПУСК STOW ---
-echo "--- Установка ссылок через stow ---"
-stow -v -t ~/.config/ config/
-stow -v -t ~/.local/ local/
-stow -v -t ~ bash/
-
-if [ -d "$BACKUP_DIR" ]; then
-    echo -e "\nГотово! Бэкапы старых файлов тут: $BACKUP_DIR"
 else
-    echo -e "\nГотово! Конфликтов не найдено, бэкап не потребовался."
+    echo "No conflicting files found — skipping backup."
 fi
+
+# ──────────────────────────────────────────────
+# 4. Stow dotfiles
+# ──────────────────────────────────────────────
+mkdir -p "$HOME/.config" "$HOME/.local"
+
+echo "Stowing dotfiles..."
+stow -d "$DOTFILES_DIR" -t "$HOME"       bash
+stow -d "$DOTFILES_DIR" -t "$HOME/.config" config
+stow -d "$DOTFILES_DIR" -t "$HOME/.local"  local
+
+echo "Done."

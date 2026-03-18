@@ -5,7 +5,7 @@ if [ -z "$1" ]; then
 fi
 
 # Обновляем список пакетов
-yay -Qee > ~/Dotfiles/packages.txt
+yay -Qeq > ~/Dotfiles/packages.txt
 
 cd ~/Dotfiles || exit
 
