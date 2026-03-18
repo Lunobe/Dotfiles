@@ -1,5 +1,34 @@
 #!/bin/bash
 
+if ! command -v yay &> /dev/null; then
+    read -p "yay not found. Do you want to install? (y/n): " install_yay
+    if [[ "$install_yay" =~ ^[Yy]$ ]]; then
+        echo "Downloading yay..."
+        sudo pacman -S --needed --noconfirm git base-devel
+        git clone https://aur.archlinux.org/yay.git
+        cd yay || exit
+        makepkg -si --noconfirm
+        cd ..
+        rm -rf yay
+    else
+        echo "Exiting..."
+    fi
+fi
+
+if [ -f "packages.txt" ]; then
+    read -p "Do you want to install all packages? (y/n): " answer
+    if [[ "$answer" =~ ^[Yy]$ ]]; then
+        echo "Downloading packages from packages.txt..."
+        while IFS= read -r package || [ -n "$package" ]; do
+            [[ -z "$package" || "$package" =~ ^# ]] && continue
+            echo "Downloading: $package"
+            yay -S --noconfirm --needed "$package"
+        done < "packages.txt"
+    else
+        echo "Ok."
+    fi
+fi
+
 BACKUP_DIR="$HOME/dotfiles_backup_$(date +%Y%m%d_%H%M%S)"
 mkdir -p "$BACKUP_DIR"
 
@@ -33,11 +62,10 @@ if [ -d "bash" ]; then
     done
 fi
 
-echo -e "\n\n\n\nBackup saved in: $BACKUP_DIR"
-echo ""
+echo -e "\nBackup saved in: $BACKUP_DIR\n"
 
 stow -v -t ~/.config/ config/
 stow -v -t ~/.local/ local/
 stow -v -t ~ bash/
 
-echo -e "\nDone.\n\n\n\n"
+echo "Done"

@@ -69,6 +69,7 @@ gedit 49.0-2
 ghostscript 10.07.0-1
 gimp 3.2.0-1
 git 2.53.0-1
+git-filter-repo 2.47.0-3
 glances 4.5.2-2
 gnome-keyring 1:48.0-1
 goverlay 1.7.5-1
