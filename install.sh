@@ -19,7 +19,7 @@ if [[ "$install_pkgs" =~ ^[Yy]$ ]]; then
         rm -rf yay
     fi
     echo "Installing packages..."
-    yay -S --needed - < "$DOTFILES_DIR/packages.txt"
+    yay -S --needed --noconfirm - < "$DOTFILES_DIR/packages.txt"
 fi
 
 # ──────────────────────────────────────────────
