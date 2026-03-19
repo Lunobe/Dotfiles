@@ -14,6 +14,7 @@
 !config/niri/cfg/
 !config/niri/cfg/**
 !scripts/
+!scripts/**
 !wallpapers/
 !.gitignore
 !README.md
