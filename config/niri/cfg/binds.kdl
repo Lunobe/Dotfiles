@@ -1,8 +1,8 @@
 binds {
     Mod+Shift+Slash		repeat=false	hotkey-overlay-title="Show this list"				{ show-hotkey-overlay; }
 
-    Mod+T			repeat=false	hotkey-overlay-title="Open a Terminal: kitty"		{ spawn "kitty"; }
-    Mod+Space			repeat=false	hotkey-overlay-title="Run an Application: wofi" 	{ spawn-sh "pkill wofi || wofi"; }
+    Mod+Return			repeat=false	hotkey-overlay-title="Open a Terminal: kitty"		{ spawn "kitty"; }
+    Mod+Ctrl+Return			repeat=false	hotkey-overlay-title="Run an Application: wofi" 	{ spawn-sh "pkill wofi || wofi"; }
     Super+Alt+L 		repeat=false	hotkey-overlay-title="Lock the Screen: swaylock"	{ spawn "swaylock"; }
     Mod+B 			repeat=false	hotkey-overlay-title="Browser: firefox" 			{ spawn "firefox"; }
     Mod+E 			repeat=false	hotkey-overlay-title="Open File manager: nautilus" 	{ spawn-sh "nautilus --new-window"; }
@@ -101,8 +101,8 @@ binds {
     Mod+Shift+Minus { set-window-height "-10%"; }
     Mod+Shift+Equal { set-window-height "+10%"; }
 
-    Mod+Alt+V       { toggle-window-floating; }
-    Mod+Shift+V { switch-focus-between-floating-and-tiling; }
+    Mod+T       { toggle-window-floating; }
+    Mod+Shift+T { switch-focus-between-floating-and-tiling; }
 
     Mod+W { toggle-column-tabbed-display; }
 
