@@ -1,5 +1,6 @@
 spawn-at-startup "waybar"
 spawn-at-startup "/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1"
 spawn-at-startup "swww-daemon"
+spawn-sh-at-startup "corectrl"
 spawn-sh-at-startup "copyq --start-server"
 spawn-sh-at-startup "sleep 5 && obs --startreplaybuffer"
