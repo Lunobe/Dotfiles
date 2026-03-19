@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=Vesktop
+Comment=All-in-one voice and text chat for gamers
+Exec=/home/lunobe/.local/opt/vesktop-1.6.5/vesktop
+Icon=/home/lunobe/.local/opt/vesktop-1.6.5/vesktop.ico
+Terminal=false
+Type=Application
+Categories=Social;Chat;
