@@ -18,6 +18,7 @@ btrfs-progs
 cantarell-fonts
 compsize
 copyq
+corectrl
 cryptsetup
 cups
 cups-browsed
