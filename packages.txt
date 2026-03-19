@@ -4,6 +4,7 @@ alsa-plugins
 alsa-utils
 amd-ucode
 android-tools
+apr-util
 aspell
 b43-fwcutter
 base
@@ -23,6 +24,7 @@ cups
 cups-browsed
 cups-filters
 cups-pdf
+davinci-resolve
 device-mapper
 dialog
 diffutils
@@ -53,6 +55,7 @@ ex-vi-compat
 exfatprogs
 f2fs-tools
 fastfetch
+ffmpeg4.4
 firefox
 firewall-applet
 firewalld
@@ -81,6 +84,7 @@ gst-plugin-pipewire
 gst-plugin-va
 gst-plugins-bad
 gst-plugins-ugly
+gtk2
 gutenprint
 haveged
 hdparm
@@ -97,9 +101,12 @@ kitty
 less
 lib32-mangohud
 lib32-vulkan-radeon
+libc++
+libc++abi
 libdvdcss
 libgsf
 libopenraw
+libpng12
 linux
 linux-firmware
 linux-headers
@@ -136,6 +143,7 @@ ntfs-3g
 ntp
 nwg-look
 obs-studio
+onetbb
 opencomposite-git
 openssh
 os-prober
@@ -162,6 +170,13 @@ python-pipx
 python-pyqt5
 python-reportlab
 qbittorrent
+qt5-multimedia
+qt5-quickcontrols2
+qt5-svg
+qt5-webchannel
+qt5-webengine
+qt5-websockets
+qt5-x11extras
 rebuild-detector
 reflector
 reflector-simple
