@@ -10,6 +10,9 @@
 
 !bash/
 !config/
+!config/niri/
+!config/niri/cfg/
+!config/niri/cfg/**
 !scripts/
 !wallpapers/
 !.gitignore
