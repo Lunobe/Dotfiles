@@ -1,17 +1,13 @@
-# 1. Глобальный игнор
 *
 
-# 2. Разрешаем структуру папок (без этого Git не зайдет внутрь)
 !local/
 !local/share/
 !local/share/applications/
 !local/share/themes/
 
-# 3. Разрешаем всё содержимое внутри этих папок
 !local/share/applications/**
 !local/share/themes/**
 
-# 4. Разрешаем остальные важные папки и файлы
 !bash/
 !config/
 !scripts/
@@ -21,7 +17,6 @@
 !packages.txt
 !install.sh
 
-# 5. Исключения для мусора (даже в разрешенных папках)
 __pycache__/
 *.swp
 .DS_Store
