@@ -10,9 +10,7 @@
 
 !bash/
 !config/
-!config/niri/
-!config/niri/cfg/
-!config/niri/cfg/**
+!config/**
 !scripts/
 !scripts/**
 !wallpapers/
