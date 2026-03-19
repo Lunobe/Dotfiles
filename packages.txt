@@ -159,6 +159,7 @@ python-defusedxml
 python-jinja
 python-packaging
 python-pillow
+python-pip
 python-pipx
 python-pyqt5
 python-reportlab

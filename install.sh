@@ -20,6 +20,7 @@ if [[ "$install_pkgs" =~ ^[Yy]$ ]]; then
     fi
     echo "Installing packages..."
     yay -S --needed --noconfirm - < "$DOTFILES_DIR/packages.txt"
+    pipx install obsws-cli
 fi
 
 # ──────────────────────────────────────────────
