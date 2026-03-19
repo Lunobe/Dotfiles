@@ -1,4 +1,0 @@
-environment {
-    "GTK_THEME" "Andromeda"
-    "ADW_DISABLE_PORTAL" "1"
-}
