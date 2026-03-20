@@ -1,7 +1,7 @@
 prefer-no-csd
 
 layout {
-    gaps 15
+    gaps 20
     center-focused-column "never"
     preset-column-widths {
         proportion 0.33333
@@ -12,15 +12,22 @@ layout {
     default-column-width { proportion 0.5; }
 
     focus-ring {
+    	off
+    }
+    
+    border {
+        on
         width 2
-        active-color "#7fc8ff"
-        inactive-color "#505050"
+        urgent-color "#9b0000"
+        active-color "#bfbfbfaa"
+        inactive-color "#00000000"
     }
 
-    shadow {
-        softness 30
-        spread 5
-        offset x=0 y=5
-        color "#0007"
+    struts {
+        left 44
+        right 44
+        top 44
+        bottom 44
     }
+
 }
