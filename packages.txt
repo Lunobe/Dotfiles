@@ -193,6 +193,7 @@ tldr
 tree
 ttf-bitstream-vera
 ttf-dejavu
+ttf-jetbrains-mono-nerd
 ttf-liberation
 ttf-opensans
 ufw
