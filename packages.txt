@@ -93,6 +93,7 @@ inotify-tools
 inxi
 iptables-nft
 iwd
+jdk21-openjdk
 jfsutils
 kitty
 less
@@ -119,6 +120,7 @@ micro
 modemmanager
 mpv
 mtools
+multimc-bin
 nano
 nano-syntax-highlighting
 netctl
@@ -206,7 +208,9 @@ vkbasalt
 vulkan-radeon
 vulkan-tools
 waybar
+wayland-protocols
 waypaper
+wayvr-git
 welcome
 wget
 which

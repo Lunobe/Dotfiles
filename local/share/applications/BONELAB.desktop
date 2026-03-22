@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=BONELAB
+Comment=Play this game on Steam
+Exec=steam steam://rungameid/1592190
+Icon=/mnt/ssd1/SteamLibrary/steamapps/common/BONELAB/Bonelab_Icon.svg
+Terminal=false
+Type=Application
+Categories=Game;

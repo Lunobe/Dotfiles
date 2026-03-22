@@ -1,5 +1,5 @@
 window-rule {
-    geometry-corner-radius 0
+    geometry-corner-radius 10
     clip-to-geometry true
     draw-border-with-background false
 }
@@ -33,6 +33,9 @@ window-rule {
 
     clip-to-geometry false
     focus-ring {
+        off
+    }
+    border {
         off
     }
 }
