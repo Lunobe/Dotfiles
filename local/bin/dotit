@@ -1,0 +1,93 @@
+#!/bin/bash
+
+set -euo pipefail
+
+CONF_DIR="${HOME}/.config/lunobe"
+CONF_FILE="${CONF_DIR}/dotit.conf"
+
+mkdir -p "$CONF_DIR"
+
+if [[ ! -f "$CONF_FILE" ]]; then
+    echo "dots-path: ~/Dotfiles" > "$CONF_FILE"
+fi
+
+raw_path=$(grep "^dots-path:" "$CONF_FILE" | awk '{print $2}')
+DOTFILES_DIR="${raw_path/\~/$HOME}"
+
+die() { echo "error: $*" >&2; exit 1; }
+
+show_help() {
+    cat <<EOF
+Usage: $(basename "$0") [options] <path>
+
+Options:
+  -h, --help    Show this help message
+  -u            Undo: restore original file from repository
+
+Description:
+  Moves a file/dir to $DOTFILES_DIR and creates a symlink.
+  Configuration: $CONF_FILE
+EOF
+    exit 0
+}
+
+if [[ $# -eq 0 || "$1" == "--help" ]]; then
+    show_help
+fi
+
+undo_mode=false
+while getopts "uh" opt; do
+    case $opt in
+        u) undo_mode=true ;;
+        h) show_help ;;
+        *) exit 1 ;;
+    esac
+done
+shift $((OPTIND - 1))
+
+[[ $# -gt 0 ]] || die "no target specified"
+
+target=$(realpath -s "$1")
+
+if [[ "$undo_mode" == true ]]; then
+    [[ -L "$target" ]] || die "'$target' is not a symbolic link"
+
+    real_source=$(readlink -f "$target")
+    [[ "$real_source" == "$DOTFILES_DIR"* ]] || die "target origin is outside of $DOTFILES_DIR"
+
+    rm "$target"
+    mv "$real_source" "$target"
+    echo "==> restored: $target"
+    exit 0
+fi
+
+[[ -e "$target" && ! -L "$target" ]] || die "invalid target (not found or already a link)"
+
+base_name=$(basename "$target")
+parent_dir=$(dirname "$target")
+
+if [[ "$parent_dir" == "$HOME" ]]; then
+    read -rp "==> target in HOME root -- enter category name: " category
+    [[ -n "$category" ]] || die "category required"
+    repo_dest="${DOTFILES_DIR}/${category}/${base_name}"
+else
+    rel_path="${target#"$HOME/"}"
+    # Strip leading dots from every path component so the repo tree stays
+    # fully visible (non-hidden). Stow re-adds the dots via TARGET_MAP targets
+    # when symlinking back (e.g. config/ → ~/.config/).
+    clean_path=$(echo "$rel_path" | sed 's|/\.|/|g; s|^\.||')
+    repo_dest="${DOTFILES_DIR}/${clean_path}"
+fi
+
+repo_parent=$(dirname "$repo_dest")
+
+if [[ -e "$repo_dest" ]]; then
+    echo "warning: conflict at $repo_dest -- overwriting"
+    rm -rf "$repo_dest"
+fi
+
+mkdir -p "$repo_parent"
+mv "$target" "$repo_dest"
+ln -sr "$repo_dest" "$target"
+
+echo "==> deployed: $target -> $repo_dest"

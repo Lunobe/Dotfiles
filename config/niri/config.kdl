@@ -1,0 +1,8 @@
+include "cfg/input.kdl"
+include "cfg/outputs.kdl"
+include "cfg/layout.kdl"
+include "cfg/startup.kdl"
+include "cfg/window-n-layer-rules.kdl"
+include "cfg/binds.kdl"
+include "cfg/misc.kdl"
+include "cfg/environment.kdl"

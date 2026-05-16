@@ -1,0 +1,42 @@
+#!/bin/bash
+
+set -euo pipefail
+
+CONF_FILE="${HOME}/.config/lunobe/dotit.conf"
+
+if [[ -f "$CONF_FILE" ]]; then
+    raw_path=$(grep "^dots-path:" "$CONF_FILE" | awk '{print $2}')
+    DOTS_DIR="${raw_path/\~/$HOME}"
+else
+    DOTS_DIR="$HOME/Dotfiles"
+fi
+
+die() { echo "error: $*" >&2; exit 1; }
+
+[[ $# -gt 0 ]] || die "commit message required"
+
+if command -v yay &>/dev/null; then
+    yay -Qs > "$DOTS_DIR/bootstrap/packages.txt"
+else
+    echo "warning: yay not found, skipping packages.txt update" >&2
+fi
+
+cd "$DOTS_DIR" || die "dotfiles directory not found: $DOTS_DIR"
+
+echo "==> changes:"
+git status --short
+
+if [[ -z "$(git status --porcelain)" ]]; then
+    echo "==> nothing to sync"
+    exit 0
+fi
+
+read -rp "==> push? [y/N]: " confirm
+if [[ "$confirm" == [yY] ]]; then
+    git add -A
+    git commit -m "$*"
+    git push origin main
+    echo "==> pushed"
+else
+    echo "==> cancelled"
+fi

@@ -1,0 +1,5 @@
+sddm
+docker
+containerd
+avahi-daemon
+ufw
